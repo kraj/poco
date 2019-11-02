@@ -63,7 +63,8 @@
     defined(__SH4__) || defined(__alpha__) || \
     defined(_MIPS_ARCH_MIPS32R2) || \
     defined(__AARCH64EL__) || \
-    defined(nios2) || defined(__nios2) || defined(__nios2__)
+    defined(nios2) || defined(__nios2) || defined(__nios2__) || \
+    (defined(__riscv) && defined(__riscv_float_abi_double))
 #define DOUBLE_CONVERSION_CORRECT_DOUBLE_OPERATIONS 1
 #elif defined(_M_IX86) || defined(__i386__) || defined(__i386)
 #if defined(_WIN32)
